@@ -1,0 +1,91 @@
+:root {
+	--color-prettylights-decoration-bg: ;
+	--color-prettylights-decoration-border-radius: ;
+	--color-prettylights-decoration-border-color: ;
+	--color-prettylights-decoration-language-bg: ;
+	--color-prettylights-decoration-linenumber-color: ;
+	--color-prettylights-decoration-highlighted-linenumber-color: ;
+	--color-prettylights-decoration-prompt-color: ;
+	--color-prettylights-decoration-focussed-line-bg: ;
+	--color-prettylights-decoration-highlighted-line-bg: ;
+	--color-prettylights-decoration-highlighted-line-border-color: ;
+}
+
+.highlight {
+	background-color: var(--color-prettylights-decoration-bg);
+	border-radius: var(--color-prettylights-decoration-border-radius);
+	border: 1px solid var(--color-prettylights-decoration-border-color);
+}
+
+.highlight:focus-within {
+	outline-color: var(--color-prettylights-decoration-border-color);
+	outline-style: solid;
+	outline-width: 0.25ch;
+	outline-offset: -0.125em;
+}
+
+.highlight-header {
+	display: flex;
+	align-items: center;
+	border-block-end: 1px solid var(--color-prettylights-decoration-border-color);
+	padding: 1ch;
+	font-size: 0.8em;
+}
+
+.highlight-header>*:not(:last-child) {
+	margin-inline-end: 1ch;
+}
+
+.highlight-language {
+	font-family: monospace;
+	background-color: var(--color-prettylights-decoration-language-bg);
+	color: currentColor;
+	padding: 0.2ch 0.6ch;
+	border-radius: calc(var(--color-prettylights-decoration-border-radius) / 2);
+}
+
+.highlight pre {
+	background-color: transparent;
+	border: none;
+	overflow-x: auto;
+}
+
+.highlight pre>code {
+	display: grid;
+	padding-inline: 0;
+}
+
+.highlight pre .line {
+	border-inline-start: 2px solid transparent;
+}
+
+.highlight pre .line:focus:not(:focus-visible),
+.highlight pre .line:hover {
+	background-color: var(--color-prettylights-decoration-focussed-line-bg);
+}
+
+.highlight pre .line-number {
+	user-select: none;
+	padding-inline: 1.2em;
+	text-align: right;
+	color: var(--color-prettylights-decoration-linenumber-color);
+}
+
+.highlight pre .line-standalone {
+	padding-inline: 1.2em;
+}
+
+.highlight pre .line-prompt {
+	user-select: none;
+	margin-inline-end: 1ch;
+	color: var(--color-prettylights-decoration-prompt-color);
+}
+
+.highlight pre .line-highlighted {
+	background: var(--color-prettylights-decoration-highlighted-line-bg);
+	border-inline-start: 2px solid var(--color-prettylights-decoration-highlighted-line-border-color);
+}
+
+.highlight pre .line-highlighted .line-number {
+	color: var(--color-prettylights-decoration-highlighted-linenumber-color);
+}

@@ -1,0 +1,33 @@
+{
+	"name": "@microflash/remark-starry-night",
+	"version": "1.0.0",
+	"description": "remark plugin to highlight codeblocks with Starry Night",
+	"license": "MIT",
+	"keywords": [
+		"unified",
+		"remark",
+		"remark-plugin",
+		"plugin",
+		"markdown",
+		"syntax",
+		"highlighting",
+		"starry-night",
+		"vscode-textmate"
+	],
+	"repository": "https://github.com/Microflash/remark-starry-night.git",
+	"bugs": "https://github.com/Microflash/remark-starry-night/issues",
+	"homepage": "https://github.com/Microflash/remark-starry-night#readme",
+	"author": "Naiyer Asif (https://mflash.dev)",
+	"type": "module",
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"index.css"
+	],
+	"dependencies": {
+		"@microflash/fenceparser": "^2.5.2",
+		"@wooorm/starry-night": "^1.1.0",
+		"hast-util-to-html": "^8.0.3",
+		"unist-util-visit": "^4.1.0"
+	}
+}
