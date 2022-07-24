@@ -17,7 +17,7 @@ const defaults = {
 function decorate(code, scope, lang, options, metadata) {
 	const lines = code.split(/\r\n|\r|\n/)
 
-	const prompts = metadata && metadata.prompt ? metadata.prompt.trim().split(',').map(p => parseInt(p)) : null
+	const prompts = metadata && metadata.prompt ? metadata.prompt : null
 
 	if (options.showLineNumbers && lines && lines.length > 1) {
 		const maxWidth = `${lines.length}`.length

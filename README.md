@@ -203,7 +203,7 @@ Line numbers are automatically padded to ensure that the lines are properly alig
 
 Sometimes you may want to show a prompt while displaying a command-line instruction. Prompts on multiple lines can be specified as follows.
 
-	```sh prompt='1,3'
+	```sh prompt{1,3}
 	curl localhost:8080/actuator/health
 	{"status":"UP"}
 	curl localhost:8080/greeter?name=Anya
@@ -232,7 +232,7 @@ The above codeblock will yield:
 
 You can highlight multiple lines by specifying the line numbers (or even, range of line numbers) between curly braces in the codeblock metadata.
 
-	```sh {4-7} prompt='1'
+	```sh {4-7} prompt{1}
 	aws --endpoint-url http://localhost:4566 s3api list-buckets
 	{
 	  "Buckets": [
@@ -279,7 +279,7 @@ Refer to the documentation of [fenceparser](https://github.com/Microflash/fencep
 
 Captions are useful to describe the context of a piece of code.
 
-	```sh caption='Configuring the AWS account' prompt='1'
+	```sh caption='Configuring the AWS account' prompt{1}
 	aws configure
 	AWS Access Key ID [None]: gwen
 	AWS Secret Access Key [None]: stacy
