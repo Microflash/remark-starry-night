@@ -1,6 +1,6 @@
 {
 	"name": "@microflash/remark-starry-night",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "remark plugin to highlight codeblocks with Starry Night",
 	"license": "MIT",
 	"keywords": [
@@ -28,13 +28,13 @@
 		"test": "ava"
 	},
 	"dependencies": {
-		"@microflash/fenceparser": "^2.6.0",
+		"@microflash/fenceparser": "^2.6.1",
 		"@wooorm/starry-night": "^1.2.0",
 		"hast-util-to-html": "^8.0.3",
-		"unist-util-visit": "^4.1.0"
+		"unist-util-visit": "^4.1.1"
 	},
 	"devDependencies": {
-		"ava": "^4.3.1",
+		"ava": "^4.3.3",
 		"remark": "^14.0.2"
 	},
 	"ava": {

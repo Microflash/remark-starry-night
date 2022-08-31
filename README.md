@@ -1,6 +1,7 @@
 # remark-starry-night
 
 [![npm](https://img.shields.io/npm/v/@microflash/remark-starry-night)](https://www.npmjs.com/package/@microflash/remark-starry-night)
+[![regression](https://github.com/Microflash/remark-starry-night/actions/workflows/regression.yml/badge.svg)](https://github.com/Microflash/remark-starry-night/actions/workflows/regression.yml)
 [![license](https://img.shields.io/npm/l/@microflash/remark-starry-night)](./LICENSE.md)
 
 [remark](https://github.com/remarkjs/remark) plugin to highlight codeblocks with [Starry Night](https://github.com/wooorm/starry-night)
