@@ -6,6 +6,8 @@
 
 [remark](https://github.com/remarkjs/remark) plugin to highlight codeblocks with [Starry Night](https://github.com/wooorm/starry-night)
 
+> **Stability: Legacy**. This package is no longer recommended for use. It’s still covered by semantic-versioning guarantees and not yet deprecated, but use of this package should be avoided. Please use remark-rehype to move from remark (markdown) to rehype (HTML) and then replace remark-starry-night with [`rehype-starry-night`](https://github.com/Microflash/rehype-starry-night).
+
 ## Contents
 
 - [Contents](#contents)
